@@ -1,143 +1,132 @@
-**# MercadinhoBer-
-MercadinhoBerê
-**MerceariaBere - Sistema de Gestão para Mercearia em C
-📜 Tabela de Conteúdos
-Sobre o Projeto
+Com certeza\! Entendi. Você quer uma versão mais "limpa" do texto, sem os emojis, para garantir que ele seja exibido corretamente em qualquer ambiente.
 
-Funcionalidades
+Aqui está o `README.md` revisado, mantendo toda a estrutura e formatação Markdown, mas sem os caracteres especiais (emojis) que podem não ser compatíveis com alguns terminais.
 
-Tecnologias e Conceitos Aplicados
+-----
 
-Como Compilar e Executar
+# MerceariaBere - Sistema de Gestão para Mercearia em C
 
-Estrutura de Arquivos e Dados
+## Tabela de Conteúdos
 
-Equipe
+  * [Sobre o Projeto](https://www.google.com/search?q=%23sobre-o-projeto)
+  * [Funcionalidades](https://www.google.com/search?q=%23funcionalidades)
+  * [Tecnologias e Conceitos Aplicados](https://www.google.com/search?q=%23tecnologias-e-conceitos-aplicados)
+  * [Como Compilar e Executar](https://www.google.com/search?q=%23como-compilar-e-executar)
+  * [Estrutura de Arquivos e Dados](https://www.google.com/search?q=%23estrutura-de-arquivos-e-dados)
+  * [Equipe](https://www.google.com/search?q=%23equipe)
 
-📖 Sobre o Projeto
-O MerceariaBere é um sistema de linha de comando para gerenciamento de uma mercearia, desenvolvido inteiramente na linguagem C. Este projeto foi concebido como um trabalho acadêmico em grupo  do curso de Análise e Desenvolvimento de Sistemas.
+-----
 
-O sistema simula as operações diárias de um pequeno mercado, desde o controle de estoque de produtos em diferentes setores até o processo de venda no caixa. O desenvolvimento foi focado em aplicar conceitos essenciais da programação em C, como listas encadeadas para gerenciamento de produtos, manipulação de arquivos para persistência de dados e alocação dinâmica de memória.
+## Sobre o Projeto
 
-✨ Funcionalidades
+O **MerceariaBere** é um sistema de linha de comando para gerenciamento de uma mercearia, desenvolvido inteiramente na linguagem C. Este projeto foi concebido como um trabalho acadêmico em grupo para a disciplina de [Nome da Disciplina] do curso de Análise e Desenvolvimento de Sistemas.
+
+O sistema simula as operações diárias de um pequeno mercado, desde o controle de estoque de produtos em diferentes setores até o processo de venda no caixa. O desenvolvimento foi focado em aplicar conceitos essenciais da programação em C, como **listas encadeadas** para gerenciamento de produtos, **manipulação de arquivos** para persistência de dados e **alocação dinâmica de memória**.
+
+## Funcionalidades
+
 O sistema foi implementado com um conjunto robusto de funcionalidades:
 
-Gestão de Produtos por Setores:
+  * **Gestão de Produtos por Setores:**
 
-Adicionar, listar e gerenciar produtos nos setores de Limpeza, Alimentos e Padaria.
+      * Adicionar, listar e gerenciar produtos nos setores de **Limpeza**, **Alimentos** e **Padaria**.
+      * Os IDs dos produtos são gerados de forma incremental e automática para cada setor (100+ para Limpeza, 200+ para Alimentos, etc.).
 
-Os IDs dos produtos são gerados de forma incremental e automática para cada setor (100+ para Limpeza, 200+ para Alimentos, etc.).
+  * **Controle de Estoque Inteligente:**
 
-Controle de Estoque Inteligente:
+      * O estoque é atualizado dinamicamente após cada venda.
+      * O sistema verifica a disponibilidade do produto antes de adicioná-lo ao carrinho.
+      * Função específica para atualizar o estoque da Padaria no início do dia.
 
-O estoque é atualizado dinamicamente após cada venda.
+  * **Sistema de Carrinho e Pagamento:**
 
-O sistema verifica a disponibilidade do produto antes de adicioná-lo ao carrinho.
+      * Adição de produtos de qualquer setor ao carrinho de compras.
+      * Cálculo de subtotal em tempo real.
+      * Múltiplas formas de pagamento: **Dinheiro** (com sistema de troco) e **Cartão** (simulado).
+      * Sistema de **desconto progressivo** para pagamentos em dinheiro, baseado no valor total da compra.
 
-Função específica para atualizar o estoque da Padaria no início do dia.
+  * **Persistência de Dados em Arquivos:**
 
-Sistema de Carrinho e Pagamento:
+      * Todo o inventário de produtos é salvo em arquivos de texto (`limpeza.txt`, `alimentos.txt`, `padaria.txt`), permitindo que os dados persistam entre as execuções do programa.
+      * O sistema carrega os dados dos arquivos ao ser iniciado.
 
-Adição de produtos de qualquer setor ao carrinho de compras.
+  * **Geração de Relatórios e Logs:**
 
-Cálculo de subtotal em tempo real.
+      * **Relatório de Fechamento de Caixa:** Gera um arquivo `relatorio_fechamento.txt` com o resumo financeiro do dia (faturamento por setor, valor de abertura e fechamento).
+      * **Relatórios de Estoque:** Listagem de todos os produtos, com opções de ordenação por **ID** ou **ordem alfabética**.
+      * **Relatório de Estoque Baixo:** Exibe produtos com 5 ou menos unidades em estoque.
+      * **Log de Atividades:** Todas as ações importantes do usuário (navegação, vendas, erros) são registradas com data e hora no arquivo `arquivoMercado.log`.
 
-Múltiplas formas de pagamento: Dinheiro (com sistema de troco) e Cartão (simulado).
+  * **Interface de Usuário em Console:**
 
-Sistema de desconto progressivo para pagamentos em dinheiro, baseado no valor total da compra.
+      * Menus de texto organizados e interativos para facilitar a navegação.
+      * Uso de `system("cls")` e `SetConsoleOutputCP(CP_UTF8)` para uma experiência de usuário limpa e com suporte a caracteres especiais no Windows.
 
-Persistência de Dados em Arquivos:
+## Tecnologias e Conceitos Aplicados
 
-Todo o inventário de produtos é salvo em arquivos de texto (limpeza.txt, alimentos.txt, padaria.txt), permitindo que os dados persistam entre as execuções do programa.
+  * **Linguagem C**
+  * **Compilador:** **GCC (MinGW)** no Windows.
+  * **Bibliotecas Padrão do C:**
+      * `stdio.h`: Para entrada e saída de dados no console e manipulação de arquivos.
+      * `stdlib.h`: Para alocação dinâmica de memória (`malloc`, `free`) e `system("cls")`.
+      * `string.h`: Para manipulação de strings (nomes dos produtos).
+      * `time.h`: Para registrar data e hora nos relatórios e logs.
+      * `windows.h`: Para `Sleep()` e `SetConsoleOutputCP()`.
+  * **Estruturas de Dados:**
+      * **Listas Encadeadas Simples** para armazenar os produtos de cada setor.
+      * `Structs` para modelar Produtos e Itens do Carrinho.
+      * Arrays para o carrinho de compras.
+  * **Conceitos de Programação:**
+      * Alocação dinâmica de memória.
+      * Ponteiros.
+      * Manipulação de arquivos (File I/O).
+      * Modularização com funções.
 
-O sistema carrega os dados dos arquivos ao ser iniciado.
+## Como Compilar e Executar
 
-Geração de Relatórios e Logs:
+Este projeto foi desenvolvido para o ambiente Windows, devido ao uso da biblioteca `windows.h`.
 
-Relatório de Fechamento de Caixa: Gera um arquivo relatorio_fechamento.txt com o resumo financeiro do dia (faturamento por setor, valor de abertura e fechamento).
+### Pré-requisitos
 
-Relatórios de Estoque: Listagem de todos os produtos, com opções de ordenação por ID ou ordem alfabética.
+  * Um compilador C, como o **GCC** (geralmente obtido através do [MinGW-w64](https://www.mingw-w64.org/)).
 
-Relatório de Estoque Baixo: Exibe produtos com 5 ou menos unidades em estoque.
+### Passos
 
-Log de Atividades: Todas as ações importantes do usuário (navegação, vendas, erros) são registradas com data e hora no arquivo arquivoMercado.log.
+1.  **Clone o repositório:**
 
-Interface de Usuário em Console:
+    ```bash
+    git clone https://github.com/SEU_USUARIO/MerceariaBere.git
+    ```
 
-Menus de texto organizados e interativos para facilitar a navegação.
+2.  **Navegue até o diretório do projeto:**
 
-Uso de system("cls") e SetConsoleOutputCP(CP_UTF8) para uma experiência de usuário limpa e com suporte a caracteres especiais no Windows.
+    ```bash
+    cd MerceariaBere
+    ```
 
-🛠️ Tecnologias e Conceitos Aplicados
-Linguagem C
+3.  **Compile o arquivo `Berenice.c`:**
 
-Compilador: GCC (MinGW) no Windows.
+    ```bash
+    gcc Berenice.c -o MerceariaBere.exe
+    ```
 
-Bibliotecas Padrão do C:
+4.  **Execute o programa:**
 
-stdio.h: Para entrada e saída de dados no console e manipulação de arquivos.
+    ```bash
+    ./MerceariaBere.exe
+    ```
 
-stdlib.h: Para alocação dinâmica de memória (malloc, free) e system("cls").
+    Ou simplesmente:
 
-string.h: Para manipulação de strings (nomes dos produtos).
+    ```bash
+    MerceariaBere.exe
+    ```
 
-time.h: Para registrar data e hora nos relatórios e logs.
+## Estrutura de Arquivos e Dados
 
-windows.h: Para Sleep() e SetConsoleOutputCP().
-
-Estruturas de Dados:
-
-Listas Encadeadas Simples para armazenar os produtos de cada setor.
-
-Structs para modelar Produtos e Itens do Carrinho.
-
-Arrays para o carrinho de compras.
-
-Conceitos de Programação:
-
-Alocação dinâmica de memória.
-
-Ponteiros.
-
-Manipulação de arquivos (File I/O).
-
-Modularização com funções.
-
-🚀 Como Compilar e Executar
-Este projeto foi desenvolvido para o ambiente Windows, devido ao uso da biblioteca windows.h.
-
-Pré-requisitos
-Um compilador C, como o GCC (geralmente obtido através do MinGW-w64).
-
-Passos
-Clone o repositório:
-
-Bash
-
-git clone https://github.com/SEU_USUARIO/MerceariaBere.git
-Navegue até o diretório do projeto:
-
-Bash
-
-cd MerceariaBere
-Compile o arquivo Berenice.c:
-
-Bash
-
-gcc Berenice.c -o MerceariaBere.exe
-Execute o programa:
-
-Bash
-
-./MerceariaBere.exe
-Ou simplesmente:
-
-Bash
-
-MerceariaBere.exe
-📁 Estrutura de Arquivos e Dados
 Ao executar o programa, ele irá criar e interagir com os seguintes arquivos no mesmo diretório do executável:
 
+```
 MerceariaBere/
 ├── MerceariaBere.exe      # O programa compilado
 ├── Berenice.c             # O código-fonte principal
@@ -148,12 +137,16 @@ MerceariaBere/
 │
 ├── arquivoMercado.log     # Log de todas as operações realizadas
 └── relatorio_fechamento.txt # Relatório gerado ao fechar o caixa
-👥 Equipe
+```
+
+## Equipe
+
 Este projeto foi desenvolvido com a colaboração dos seguintes membros:
 
-Nome do Integrante	GitHub
-Vitor Cassel 1	@VitorCassel
-Adryan Felix 2	@Adryannofc 
-luan Augusto 3	@usuario3
-Guilherme Rezende 4	@usuario4
-Paulo Gustavo 5	@usuario5
+| Nome do Integrante | GitHub                                     |
+| :----------------- | :----------------------------------------- |
+| Vitor Cassel 1   | [@VitorCassel](https://www.google.com/search?q=https://github.com/VitorCassel)   |
+| Adryan Felix 2   | [@Adryannofc](https://www.google.com/search?q=https://github.com/Adryannofc)   |
+| Luan Augusto 3   
+| Guilherme Rezende 4   
+| Paulo Gustavo 5   

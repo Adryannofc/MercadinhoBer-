@@ -1,0 +1,12 @@
+=====Relatorio de Fechamento(29/07/2025)=====
+
+- Fechamento realizado: 16:39:54
+
+=====SETORES=====
+- Limpeza: 0.00
+- Alimento: 0.00
+- Padaria: 0.00
+
+=====CAIXA=====
+- Abertura(Troco Inicial): 23213.00
+- Fechamento(Total): 23213.00

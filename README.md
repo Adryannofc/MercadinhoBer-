@@ -142,8 +142,8 @@ Este projeto foi desenvolvido com a colaboração dos seguintes membros:
 
 | Nome do Integrante | GitHub                                     |
 | :----------------- | :----------------------------------------- |
-| Vitor Cassel 1   | [@VitorCassel](https://www.google.com/search?q=https://github.com/VitorCassel)   |
-| Adryan Felix 2   | [@Adryannofc](https://www.google.com/search?q=https://github.com/Adryannofc)   |
-| Luan Augusto 3   | [@luanlexe](https://www.google.com/search?q=https://github.com/luanlexe)   |
+| Vitor Cassel 1   | [@VitorCassel](https://github.com/VitorCassel)   |
+| Adryan Felix 2   | [@Adryannofc](https://github.com/Adryannofc)   |
+| Luan Augusto 3   | [@luanlexe](https://github.com/luanlexe)   |
 | Guilherme Rezende 4   
 | Paulo Gustavo 5   

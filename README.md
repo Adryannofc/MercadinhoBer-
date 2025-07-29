@@ -1,6 +1,3 @@
-Com certeza\! Entendi. Você quer uma versão mais "limpa" do texto, sem os emojis, para garantir que ele seja exibido corretamente em qualquer ambiente.
-
-Aqui está o `README.md` revisado, mantendo toda a estrutura e formatação Markdown, mas sem os caracteres especiais (emojis) que podem não ser compatíveis com alguns terminais.
 
 -----
 
@@ -8,18 +5,18 @@ Aqui está o `README.md` revisado, mantendo toda a estrutura e formatação Mark
 
 ## Tabela de Conteúdos
 
-  * [Sobre o Projeto](https://www.google.com/search?q=%23sobre-o-projeto)
-  * [Funcionalidades](https://www.google.com/search?q=%23funcionalidades)
-  * [Tecnologias e Conceitos Aplicados](https://www.google.com/search?q=%23tecnologias-e-conceitos-aplicados)
-  * [Como Compilar e Executar](https://www.google.com/search?q=%23como-compilar-e-executar)
-  * [Estrutura de Arquivos e Dados](https://www.google.com/search?q=%23estrutura-de-arquivos-e-dados)
-  * [Equipe](https://www.google.com/search?q=%23equipe)
+  * Sobre o Projeto
+  * Funcionalidades
+  * Tecnologias e Conceitos Aplicados
+  * Como Compilar e Executar
+  * Estrutura de Arquivos e Dados
+  * Equipe
 
 -----
 
 ## Sobre o Projeto
 
-O **MerceariaBere** é um sistema de linha de comando para gerenciamento de uma mercearia, desenvolvido inteiramente na linguagem C. Este projeto foi concebido como um trabalho acadêmico em grupo para a disciplina de [Nome da Disciplina] do curso de Análise e Desenvolvimento de Sistemas.
+O **MerceariaBere** é um sistema de linha de comando para gerenciamento de uma mercearia, desenvolvido inteiramente na linguagem C. Este projeto foi concebido como um trabalho acadêmico em grupo para a  do curso de Análise e Desenvolvimento de Sistemas.
 
 O sistema simula as operações diárias de um pequeno mercado, desde o controle de estoque de produtos em diferentes setores até o processo de venda no caixa. O desenvolvimento foi focado em aplicar conceitos essenciais da programação em C, como **listas encadeadas** para gerenciamento de produtos, **manipulação de arquivos** para persistência de dados e **alocação dinâmica de memória**.
 
